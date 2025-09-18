@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DLO Routing">
+  <meta name="keywords" content="Reinforcement learning, robot learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DLOrouting</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <link href="offcanvas.css" rel="stylesheet">
+    
+  </head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Routing Manipulation of Deformable Linear Object Using
+            Reinforcement Learning and Diffusion Policy    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-13">Anonymous Authors</h2>
+      <div class="content has-text-justified">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-2">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          Tasks involving deformable linear objects (DLOs) are prevalent in daily life but pose significant challenges due to their infinite degrees of freedom and underactuated nature. 
+          Frequent contact between DLOs and surrounding objects with unknown physical parameters, such as friction, further complicates their manipulation.
+          Performing tasks like routing ropes through a hole requires gentle yet robust manipulation, making it particularly challenging.
+          Previous research has not adequately addressed general DLO manipulation tasks that involve intensive contact, especially in environments with rough surfaces.
+          This paper presents a robust and delicate manipulation learning approach for the DLO routing task, leveraging reinforcement learning and diffusion policy. 
+          First, reinforcement learning agents are trained separately for rope insertion and pulling. During training, the agents are encouraged to minimize rope tension throughout task 
+          execution in environments with randomized friction to achieve delicate motion. Next, the rollouts from these agents are collected as expert demonstrations to train a diffusion policy. 
+          Our approach generates delicate motions to prevent the rope from being damaged or getting stuck on rough surfaces while remaining robust against environmental disturbances.
+         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Video</h2>
+        <div class="content has-text-justified">
+          <video id="generalvideo" controls muted loop playsinline height="100%">
+            <source src="static/videos/icra-updated-speed.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Simulation Experiments</h3>
+
+        <!-- <p>
+            We train dexterous manipulation using RL with single-viewed point cloud. The <span style="color: #3D85C6">blue points</span>
+            are observed by camera <br> while the <span style="color: #CC0000">red points</span> are imagined from robot
+            model.
+          </p> -->
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <p>
+          The following experiment shows the evaluation result for RL w/o rand mu with no disturbance and diffusion policy with ring displacement.
+        </p>
+
+     
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-one-second">
+        <!-- <h3 class="title is-4">Insertion</h3> -->
+        <img src="static/videos/rolloutsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
+
+        <br>
+        
+
+        <br>
+        <br>
+      </div>
+      <div class="column is-one-second">
+
+        <img src="static/videos/rolloutdisturbsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
+
+
+        <br>
+       
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real-World Experiments</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  
+
+
+  
+</section>
+
+
+<section class="section">
+
+
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+  
+        <!-- <p>
+            We train dexterous manipulation using RL with single-viewed point cloud. The <span style="color: #3D85C6">blue points</span>
+            are observed by camera <br> while the <span style="color: #CC0000">red points</span> are imagined from robot
+            model.
+          </p> -->
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-one-second">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4">Full Routing Precedure</h2>
+          <div class="content has-text-justified">
+          </div>
+        </div>
+        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut_softnylonfull.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-one-second">
+        <div class="column is-four-fifths">
+        <h2 class="title is-4">Rope Pulling Evaluation</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+      <div class="column is-one-second">
+        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-cable_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+       
+        
+      
+        
+      </div>
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-rubber_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+       
+    </div>
+    <div class="columns is-centered">
+      
+      </div>
+
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-thicknylon_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-threadpull_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+
+<section class="section">
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-one-second">
+        <div class="column is-four-fifths">
+        <h2 class="title is-4">Visual baseline Evaluation</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+      <div class="column is-one-second">
+        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-vbcable_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-vbcoil_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
