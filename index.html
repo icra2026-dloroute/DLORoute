@@ -45,8 +45,8 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Routing Manipulation of Deformable Linear Object Using
-            Reinforcement Learning and Diffusion Policy    
+          Hierarchical DLO Routing with Reinforcement Learning and 
+          In-Context Vision-language Models   
           </div>
         </div>
       </div>
@@ -72,14 +72,12 @@
       <h2 class="title is-2">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-          Tasks involving deformable linear objects (DLOs) are prevalent in daily life but pose significant challenges due to their infinite degrees of freedom and underactuated nature. 
-          Frequent contact between DLOs and surrounding objects with unknown physical parameters, such as friction, further complicates their manipulation.
-          Performing tasks like routing ropes through a hole requires gentle yet robust manipulation, making it particularly challenging.
-          Previous research has not adequately addressed general DLO manipulation tasks that involve intensive contact, especially in environments with rough surfaces.
-          This paper presents a robust and delicate manipulation learning approach for the DLO routing task, leveraging reinforcement learning and diffusion policy. 
-          First, reinforcement learning agents are trained separately for rope insertion and pulling. During training, the agents are encouraged to minimize rope tension throughout task 
-          execution in environments with randomized friction to achieve delicate motion. Next, the rollouts from these agents are collected as expert demonstrations to train a diffusion policy. 
-          Our approach generates delicate motions to prevent the rope from being damaged or getting stuck on rough surfaces while remaining robust against environmental disturbances.
+Long-horizon routing tasks of deformable linear objects (DLOs), such as cables and ropes, are common in industrial assembly lines and everyday life. 
+These tasks are particularly challenging because they require robots to manipulate DLO with long-horizon planning and reliable skill execution. Successfully completing such tasks demands adapting to their nonlinear dynamics, decomposing abstract routing goals, and generating multi-step plans composed of multiple skills, all of which require accurate high-level reasoning during execution. 
+In this paper, we propose a fully autonomous hierarchical framework for solving challenging DLO routing tasks. Given an implicit or explicit routing goal expressed in language, our framework leverages vision-language models~(VLMs) for in-context high-level reasoning to synthesize feasible plans, which are then executed by low-level skills trained via reinforcement learning. 
+To improve robustness in long horizons, we further introduce a failure recovery mechanism that reorients the DLO into insertion-feasible states.
+Our approach generalizes to diverse scenes involving object attributes, spatial descriptions, as well as implicit language commands.
+It outperforms the next best baseline method by nearly 50\% and achieves an overall success rate of 92.5\% across long-horizon routing scenarios.
          </p>
       </div>
     </div>
