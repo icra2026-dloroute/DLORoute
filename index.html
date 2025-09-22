@@ -213,21 +213,19 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
   </div>
   
 
-  <div class="container is-max-fullhd">
-    <div class="columns is-centered">
-      <div class="column is-one-second">
-        <div class="column is-four-fifths has-text-centered">
-          <h2 class="title is-4">Check out our longest demo! It proves the robustness of our planner.</h2>
-          <div class="content has-text-justified">
-          </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Check out our longest demo! It proves the robustness of our planner.</h2>
+        <div class="content has-text-justified">
+          <video id="generalvideo" controls muted loop autoplay playsinline height="100%">
+            <source src="static/videos/succ6_compress.mp4" type="video/mp4">
+          </video>
         </div>
-        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/succ6_compress.mp4" type="video/mp4">
-        </video>
-        <br>
       </div>
     </div>
   </div>
+
 </section>
 
 
@@ -288,19 +286,19 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
     <!-- force flex on mobile + allow wrapping + adjust gaps -->
     <div class="columns is-mobile is-multiline is-variable is-4">
 
-      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
-        <h3 class="title is-5">Fails with tightly spaced clips</h3>
+    <div class="column is-half has-text-centered">
+      <h3 class="title is-5">Fails with tightly spaced clips</h3>
         <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
           <source src="static/videos/cliptooclose.mp4" type="video/mp4">
         </video>
-      </div>
+    </div>
 
-      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
-        <h3 class="title is-5">Implicit order: natural order</h3>
+    <div class="column is-half has-text-centered">
+      <h3 class="title is-5">Typical failure cases</h3>
        <figure class="image">
           <img src="static/videos/failure.png" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
         </figure>
-      </div>
+    </div>
 
     </div>
   </div>
@@ -325,19 +323,19 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
     <!-- force flex on mobile + allow wrapping + adjust gaps -->
     <div class="columns is-mobile is-multiline is-variable is-4">
 
-      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
-        <h3 class="title is-5">Clip direction extraction</h3>
-       <figure class="image">
-          <img src="static/videos/dir_scene.png" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
-        </figure>
-      </div>
+    <div class="column is-half has-text-centered">
+      <h3 class="title is-5">Clip direction extraction</h3>
+      <figure class="image">
+        <img src="static/videos/dir_scene.png" alt="Image A" style="width:100%;height:auto;" loading="lazy">
+      </figure>
+    </div>
 
-      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
-        <h3 class="title is-5">Rope segmentation with SAM2</h3>
-       <figure class="image">
-          <img src="static/videos/rgbrope_mask1758272593.0645158.jpg" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
-        </figure>
-      </div>
+    <div class="column is-half has-text-centered">
+      <h3 class="title is-5">Rope segmentation with SAM2</h3>
+      <figure class="image">
+        <img src="static/videos/rgbrope_mask1758272593.0645158.jpg" alt="Image B" style="width:100%;height:auto;" loading="lazy">
+      </figure>
+    </div>
 
     </div>
   </div>
