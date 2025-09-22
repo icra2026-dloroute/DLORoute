@@ -8,7 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DLOrouting</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -119,6 +122,7 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
       </div>
     </div>
   </div>
+</section>
 
 
   <!-- <div class="container is-max-desktop">
@@ -134,55 +138,40 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
       </div>
     </div>
   </div> -->
+<div class="container is-max-fullhd">
+  <!-- force flex on mobile + allow wrapping + adjust gaps -->
+  <div class="columns is-mobile is-multiline is-variable is-4">
 
-  <div class="container is-max-fullhd">
-    <div class="columns is-centered">
-      <div class="column is-one-second">
-        <h3 class="title is-4">Implicit order: route a V-shape</h3>
-          <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/eval_implicit.mp4" type="video/mp4">
-          </video>
-        <br>
-        
-
-        <br>
-        <br>
-      </div>
-      <div class="column is-one-second">
-        <h3 class="title is-4">Spatial order: from right to left</h3>
-          <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/eval_spatial.mp4" type="video/mp4">
-          </video>
-
-        <br>
-       
-      </div>
+    <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+      <h3 class="title is-5">Implicit order: route a V-shape</h3>
+      <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+        <source src="static/videos/eval_implicit_compress.mp4" type="video/mp4">
+      </video>
     </div>
 
-      <div class="column is-one-second">
-        <h3 class="title is-4">Color order: from red to green, then blue</h3>
-          <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/eval_color.mp4" type="video/mp4">
-          </video>
-
-        <br>
-       
-      </div>
-
-      <div class="column is-one-second">
-        <h3 class="title is-4">Color order: from red to green, blue then yellow</h3>
-          <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/eval_4clipcolor.mp4" type="video/mp4">
-          </video>
-
-        <br>
-       
-      </div>
+    <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+      <h3 class="title is-5">Spatial order: from right to left</h3>
+      <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+        <source src="static/videos/eval_spatial_compress.mp4" type="video/mp4">
+      </video>
     </div>
 
+    <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+      <h3 class="title is-5">Color order: from red to green, then blue</h3>
+      <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+        <source src="static/videos/eval_color_compress.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+      <h3 class="title is-5">Color order: from red to green, blue then yellow</h3>
+      <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+        <source src="static/videos/eval_4clipcolor_compress.mp4" type="video/mp4">
+      </video>
+    </div>
 
   </div>
-</section>
+</div>
 
 
 
@@ -200,12 +189,6 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
       </div>
     </div>
   </div>
-
-  <br>
-  <br>
-  
-
-
   
 </section>
 
@@ -233,13 +216,13 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
   <div class="container is-max-fullhd">
     <div class="columns is-centered">
       <div class="column is-one-second">
-        <div class="column is-four-fifths">
-          <h2 class="title is-4">Full Routing Precedure</h2>
+        <div class="column is-four-fifths has-text-centered">
+          <h2 class="title is-4">Check out our longest demo! It proves the robustness of our planner.</h2>
           <div class="content has-text-justified">
           </div>
         </div>
         <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut_softnylonfull.mp4" type="video/mp4">
+          <source src="static/videos/succ6_compress.mp4" type="video/mp4">
         </video>
         <br>
       </div>
@@ -251,80 +234,113 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
 <section class="section">
 
   <div class="container is-max-fullhd">
-    <div class="columns is-centered">
-      <div class="column is-one-second">
-        <div class="column is-four-fifths">
-        <h2 class="title is-4">Rope Pulling Evaluation</h2>
-        <div class="content has-text-justified">
-        </div>
-      </div>
-      <div class="column is-one-second">
-        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-cable_speed.mp4" type="video/mp4">
+    <!-- force flex on mobile + allow wrapping + adjust gaps -->
+    <div class="columns is-mobile is-multiline is-variable is-4">
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Implicit order: route a V-shape</h3>
+        <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+          <source src="static/videos/succ4_compress.mp4" type="video/mp4">
         </video>
-        <br>
-       
-        
-      
-        
-      </div>
-      <div class="column is-one-second">
-        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-rubber_speed.mp4" type="video/mp4">
-        </video>
-        <br>
-       
-    </div>
-    <div class="columns is-centered">
-      
       </div>
 
-      <div class="column is-one-second">
-        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-thicknylon_speed.mp4" type="video/mp4">
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Implicit order: natural order</h3>
+        <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+          <source src="static/videos/icra26-succ3-green.mp4" type="video/mp4">
         </video>
-        <br>
       </div>
 
-      <div class="column is-one-second">
-        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-threadpull_speed.mp4" type="video/mp4">
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Spatial order: from right to left, then middle</h3>
+        <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+          <source src="static/videos/succ5_compress.mp4" type="video/mp4">
         </video>
-        <br>
       </div>
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Color order: from purple to black then red</h3>
+        <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+          <source src="static/videos/succ2_compress.mp4" type="video/mp4">
+        </video>
+      </div>
+
     </div>
+  </div>
   
   </div>
 </section>
 
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-one-second">
+        <div class="column is-four-fifths has-text-centered">
+          <h2 class="title is-4">Failure cases</h2>
+          <div class="content has-text-justified">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<section class="section">
+
+  <div class="container is-max-fullhd">
+    <!-- force flex on mobile + allow wrapping + adjust gaps -->
+    <div class="columns is-mobile is-multiline is-variable is-4">
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Fails with tightly spaced clips</h3>
+        <video controls muted autoplay loop playsinline style="width:100%;height:auto;">
+          <source src="static/videos/cliptooclose.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Implicit order: natural order</h3>
+       <figure class="image">
+          <img src="static/videos/failure.png" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
+        </figure>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
 
   <div class="container is-max-fullhd">
     <div class="columns is-centered">
       <div class="column is-one-second">
-        <div class="column is-four-fifths">
-        <h2 class="title is-4">Visual baseline Evaluation</h2>
-        <div class="content has-text-justified">
+        <div class="column is-four-fifths has-text-centered">
+          <h2 class="title is-4">Image Gallery</h2>
+          <div class="content has-text-justified">
+          </div>
         </div>
-      </div>
-      <div class="column is-one-second">
-        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-vbcable_speed.mp4" type="video/mp4">
-        </video>
-        <br>
-      </div>
-      <div class="column is-one-second">
-        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/cut-vbcoil_speed.mp4" type="video/mp4">
-        </video>
-        <br>
       </div>
     </div>
   </div>
-</section>
 
 
+  <div class="container is-max-fullhd">
+    <!-- force flex on mobile + allow wrapping + adjust gaps -->
+    <div class="columns is-mobile is-multiline is-variable is-4">
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Clip direction extraction</h3>
+       <figure class="image">
+          <img src="static/videos/dir_scene.png" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+        <h3 class="title is-5">Rope segmentation with SAM2</h3>
+       <figure class="image">
+          <img src="static/videos/rgbrope_mask1758272593.0645158.jpg" alt="Color order red green blue yellow" style="width:100%;height:auto;" loading="lazy">
+        </figure>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
