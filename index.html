@@ -92,7 +92,7 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
         <h2 class="title is-2">Video</h2>
         <div class="content has-text-justified">
           <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/icra-updated-speed.mp4" type="video/mp4">
+            <source src="static/videos/ICRA26_video.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -121,11 +121,11 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
   </div>
 
 
-  <div class="container is-max-desktop">
+  <!-- <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <p>
-          The following experiment shows the evaluation result for RL w/o rand mu with no disturbance and diffusion policy with ring displacement.
+          The following experiment shows the evaluation result 
         </p>
 
      
@@ -133,14 +133,15 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container is-max-fullhd">
     <div class="columns is-centered">
       <div class="column is-one-second">
-        <!-- <h3 class="title is-4">Insertion</h3> -->
-        <img src="static/videos/rolloutsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
-
+        <h3 class="title is-4">Implicit order: route a V-shape</h3>
+          <video id="generalvideo" controls muted loop playsinline height="100%">
+            <source src="static/videos/eval_implicit.mp4" type="video/mp4">
+          </video>
         <br>
         
 
@@ -148,9 +149,31 @@ It outperforms the next best baseline method by nearly 50\% and achieves an over
         <br>
       </div>
       <div class="column is-one-second">
+        <h3 class="title is-4">Spatial order: from right to left</h3>
+          <video id="generalvideo" controls muted loop playsinline height="100%">
+            <source src="static/videos/eval_spatial.mp4" type="video/mp4">
+          </video>
 
-        <img src="static/videos/rolloutdisturbsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
+        <br>
+       
+      </div>
+    </div>
 
+      <div class="column is-one-second">
+        <h3 class="title is-4">Color order: from red to green, then blue</h3>
+          <video id="generalvideo" controls muted loop playsinline height="100%">
+            <source src="static/videos/eval_color.mp4" type="video/mp4">
+          </video>
+
+        <br>
+       
+      </div>
+
+      <div class="column is-one-second">
+        <h3 class="title is-4">Color order: from red to green, blue then yellow</h3>
+          <video id="generalvideo" controls muted loop playsinline height="100%">
+            <source src="static/videos/eval_4clipcolor.mp4" type="video/mp4">
+          </video>
 
         <br>
        
