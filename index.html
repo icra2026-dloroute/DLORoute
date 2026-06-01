@@ -40,27 +40,49 @@
   </head>
 <body>
 
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-          Hierarchical DLO Routing with Reinforcement Learning and 
-          In-Context Vision-language Models   
-          </div>
-        </div>
-      </div>
+<body>
+  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+    <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
+      <video playsinline autoplay muted loop>
+        <source src="static/videos/succ6_compress.mp4" type="video/mp4">
+      </video>
     </div>
-  </div>
-</section>
+    <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+      style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
+      <video playsinline autoplay muted loop>
+        <source src="static/videos/succ6_compress.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 7rem;">
+          Hierarchical DLO Routing         </h1>
+        <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 4rem;">
+     with Reinforcement Learning and In-Context Vision-language Models         </h1>
+        <!-- <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 2rem;">
+          In Submission
+        </h1> -->
+    </div>
+  </section>
 
 <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-13">Anonymous Authors</h2>
+    <div class="column">
+      <h1 class="title is-1 publication-title">Hierarchical DLO Routing with Reinforcement Learning and In-Context Vision-language Models</h1>
+
+      <div class="is-size-4 publication-authors">
+        <span class="author-block" style="font-size: 2rem;">
+          <a href="https://lmeee.github.io/">Mingen Li</a>&nbsp;&nbsp;
+          <a href="https://hjy-u.github.io/">Houjian Yu</a>&nbsp;&nbsp;
+          <a href="https://yixuanhuang98.github.io/">Yixuan Huang</a>&nbsp;&nbsp;
+          <br>
+          <a href="https://hongyoungjin.github.io/">Youngjin Hong</a>&nbsp;&nbsp;
+          <a href="https://hantao-ye.github.io/">Hantao Ye</a>&nbsp;&nbsp;
+          <a href="https://cse.umn.edu/ece/changhyun-choi">Changhyun Choi</a>&nbsp;&nbsp;
+        </span>
+      </div>
       <div class="content has-text-justified">
 
       </div>
@@ -75,12 +97,7 @@
       <h2 class="title is-2">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-Long-horizon routing tasks of deformable linear objects (DLOs), such as cables and ropes, are common in industrial assembly lines and everyday life. 
-These tasks are particularly challenging because they require robots to manipulate DLO with long-horizon planning and reliable skill execution. Successfully completing such tasks demands adapting to their nonlinear dynamics, decomposing abstract routing goals, and generating multi-step plans composed of multiple skills, all of which require accurate high-level reasoning during execution. 
-In this paper, we propose a fully autonomous hierarchical framework for solving challenging DLO routing tasks. Given an implicit or explicit routing goal expressed in language, our framework leverages vision-language models~(VLMs) for in-context high-level reasoning to synthesize feasible plans, which are then executed by low-level skills trained via reinforcement learning. 
-To improve robustness in long horizons, we further introduce a failure recovery mechanism that reorients the DLO into insertion-feasible states.
-Our approach generalizes to diverse scenes involving object attributes, spatial descriptions, as well as implicit language commands.
-It outperforms the next best baseline method by nearly 50\% and achieves an overall success rate of 92.5\% across long-horizon routing scenarios.
+Long-horizon routing tasks of deformable linear objects (DLOs), such as cables and ropes, are common in industrial assembly lines and everyday life. These tasks are particularly challenging because they require robots to manipulate DLOs with long-horizon planning and reliable skill execution. Successfully completing such tasks demands adapting to their nonlinear dynamics, decomposing abstract routing goals, and generating multi-step plans composed of multiple skills, all of which require accurate high-level reasoning during execution. In this paper, we propose a fully autonomous hierarchical framework for solving challenging DLO routing tasks. Given an implicit or explicit routing goal expressed in language, our framework leverages vision-language models (VLMs) for in-context high-level reasoning to synthesize feasible plans, which are then executed by low-level skills trained via reinforcement learning. To improve robustness over long horizons, we further introduce a failure recovery mechanism that reorients the DLO into insertion-feasible states. Our approach generalizes to diverse scenes involving object attributes, spatial descriptions, implicit language commands, and extended five-clip settings. It achieves an overall success rate of 92% across long-horizon routing scenarios.
          </p>
       </div>
     </div>
